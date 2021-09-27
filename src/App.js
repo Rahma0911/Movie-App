@@ -11,41 +11,41 @@ class App extends Component {
         id: 1,
         title:"DreamWorks Spirit 2021",
         description:"Free-spirited Lucky...",
-        posterURL:'MoviesPics/1.jpg',
+        posterURL:'1.jpg',
         rating:"3"
       },
       {
         id: 2,
         title:"Fast & furious 9",
         description:"No matter how fast...",
-        posterURL:'MoviesPics/2.jpg',
+        posterURL:'2.jpg',
         rating:"4"},
       {
         id: 3,
         title:"The suicide squad",
         description:"Welcome to hell—a.k.a...",
-        posterURL:'MoviesPics/3.jpg',
+        posterURL:'3.jpg',
         rating:"2"
       },
       {
         id: 4,
         title:"LUCA",
         description:"In a beautiful seaside town...",
-        posterURL:'MoviesPics/4.jpg',
+        posterURL:'4.jpg',
         rating:"4"
       },
       {
         id: 5,
         title:"Harry Potter",
         description:"Based on the first of J.K...",
-        posterURL:'MoviesPics/5.jpg',
+        posterURL:'5.jpg',
         rating:"5"
       },
       {
         id: 6,
         title:"Scooby-Doo!",
         description:"An original animated feature...",
-        posterURL:'MoviesPics/6.jpg',
+        posterURL:'6.jpg',
         rating:"5"
       }
     ]
