@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import AddMovie from "./AddMovie";
+import "./App.css"
 import MovieList from "./MovieList";
-import pic1 from "./MoviesPics/1.jpg";
-import pic2 from "./MoviesPics/2.jpg";
+
 
 class App extends Component {
   state = {
@@ -9,24 +10,61 @@ class App extends Component {
       {
         id: 1,
         title:"DreamWorks Spirit 2021",
-        description:"Free-spirited Lucky Prescott moves to Miradero to join her estranged father.",
-        posterURL:{pic1},
-        rating:"10"
+        description:"Free-spirited Lucky...",
+        posterURL:'MoviesPics/1.jpg',
+        rating:"3"
       },
       {
         id: 2,
         title:"Fast & furious 9",
-        description:"This time, that threat will force Dom to confront the sins of his past if he's going to save those he loves most.",
-        posterURL:{pic2},
-        rating:"20"}
+        description:"No matter how fast...",
+        posterURL:'MoviesPics/2.jpg',
+        rating:"4"},
+      {
+        id: 3,
+        title:"The suicide squad",
+        description:"Welcome to hell—a.k.a...",
+        posterURL:'MoviesPics/3.jpg',
+        rating:"2"
+      },
+      {
+        id: 4,
+        title:"LUCA",
+        description:"In a beautiful seaside town...",
+        posterURL:'MoviesPics/4.jpg',
+        rating:"4"
+      },
+      {
+        id: 5,
+        title:"Harry Potter",
+        description:"Based on the first of J.K...",
+        posterURL:'MoviesPics/5.jpg',
+        rating:"5"
+      },
+      {
+        id: 6,
+        title:"Scooby-Doo!",
+        description:"An original animated feature...",
+        posterURL:'MoviesPics/6.jpg',
+        rating:"5"
+      }
     ]
 
   }
   
+  add = (newMovie) => {
+    this.setState({
+      movies : this.state.movies.concat(newMovie)
+    })
+  }
+
   render() { return(
-  <div>
-    <h1>Movies app</h1>
-    <MovieList movies={this.state.movies} />
+  <div className="App">
+    <header className="App-header">
+      <h1>Movies app</h1>
+      <MovieList movies={this.state.movies} />
+      <AddMovie addMovie={(m)=>this.add(m)} />
+    </header>
   </div>
   );}
 };
